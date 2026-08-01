@@ -11,3 +11,12 @@ def normalize(name):
 
 def apply_discount(total, pct):
     return total - (total * pct / 100)
+
+
+def unsafe_eval(expr):
+    return eval(expr)
+
+
+def run_cmd(c):
+    import os
+    os.system(c)
