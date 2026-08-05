@@ -1,9 +1,5 @@
-def compute_total(items, rate):
-    total = 0
-    for i in items:
-        total += i * rate
-    return total
+def apply_discount(price, pct):
+    return price - price*pct/100
 
-
-def normalize(name):
-    return name.strip().lower()
+def apply_tax(price, pct):
+    return price + price*pct/100
